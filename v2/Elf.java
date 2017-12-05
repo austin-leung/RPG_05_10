@@ -1,6 +1,7 @@
 public class Elf extends Protagonist {
 
-    public Elf() {
+    public Elf(String name) {
+	super(name);
 	hp = 450;
     }
 
