@@ -5,9 +5,9 @@ public class Protagonist {
     public final static double ATTACK_RATING = 0.4;
    
     //fields
-    private String name;
-    private int hp;
-    private int strength;
+    protected String name;
+    protected int hp;
+    protected int strength;
     private int defense;
     private double attackRating;
 
