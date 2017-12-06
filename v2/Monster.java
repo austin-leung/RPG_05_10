@@ -16,6 +16,6 @@ public class Monster extends Character {
 	//toString
 	public String toString() {
 		super.toString();
-		System.out.println("Here is a Monster");
+		return "Here is a Monster";
 	}
 }

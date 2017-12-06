@@ -9,7 +9,7 @@ public class Protagonist extends Character {
 	//toString
 	public String toString() {
 		super.toString();
-		System.out.println("Here is a Protagonist");
+		return "Here is a Protagonist";
 	}
 	
     /*constructor
