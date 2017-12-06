@@ -1,13 +1,13 @@
 ## RPG_05_10
 
 **Protagonists**:
-1. *Mage*
-1. *Warrior*
-1. *Elf*
+* *Mage*
+* *Warrior*
+* *Elf*
 
 **Monsters**:
-1. *Goblin*
-1. *Orc*
-1. *Dragon* 
+* *Goblin*
+* *Orc*
+* *Dragon* 
 
 All the aforementioned classes are kinds of **Characters**.
