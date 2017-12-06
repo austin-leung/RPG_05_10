@@ -1,7 +1,13 @@
-# RPG_05_10
+## RPG_05_10
 
-Mage, Warrior, and Elf are all kinds of Protagonists.
+**Protagonists**:
+* *Mage*
+* *Warrior*
+* *Elf*
 
-Goblin, Orc, and Dragon are all kinds of Monsters.
+**Monsters**:
+* *Goblin*
+* *Orc*
+* *Dragon* 
 
-All the aforementioned classes are kinds of Characters.
+All the aforementioned classes are kinds of **Characters**.
