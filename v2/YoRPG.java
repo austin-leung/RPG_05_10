@@ -22,8 +22,11 @@ public class YoRPG
     private int moveCount;
     private boolean gameOver;
     private int difficulty;
-
-    private InputStreamReader isr;
+	
+	//used to pick subclass of Protagonist 
+	private int profession;
+    
+	private InputStreamReader isr;
     private BufferedReader in;
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -72,9 +75,34 @@ public class YoRPG
 	    name = in.readLine();
 	} catch ( IOException e ) { }
 
+	//attempting to let the player pick class of their Protagonist
+	s = "\nChoose your protagonist: \n";
+	s += "\t1: Mage\n";
+	s += "\t2: Warrior\n";
+	s += "\t3: Elf\n";
+	s += "Selection: ";
+	System.out.print( s );
+
+	try {
+	    profession = Integer.parseInt( in.readLine() );
+	} catch ( IOException e ) { }
+	
+	if (profession == 1)
+		pat = new Mage(name);
+	else if (profession == 2)
+		pat = new Warrior(name);
+	else if (profession == 3)
+		pat = new Elf(name);
+	else
+		pat = new Protagonist(name);
+		
+	System.out.println(pat);
+	/*
 	//instantiate the player's character
 	pat = new Protagonist( name );
-
+	*/
+	
+	
     }//end newGame()
 
 
