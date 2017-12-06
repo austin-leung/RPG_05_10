@@ -1,8 +1,8 @@
 public class Elf extends Protagonist {
 
     public Elf(String name) {
-	super(name);
-	hp = 450;
+		super(name);
+		hp = 450;
     }
 
     // override default values

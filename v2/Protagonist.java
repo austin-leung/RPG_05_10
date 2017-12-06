@@ -6,6 +6,12 @@ public class Protagonist extends Character {
 
     //methods
 
+	//toString
+	public String toString() {
+		super.toString();
+		System.out.println("Here is a Protagonist");
+	}
+	
     /*constructor
      *   takes String input to name the Protagonist
      *   initializes all attributes (eg, 125, 100, 40, 0.4)
