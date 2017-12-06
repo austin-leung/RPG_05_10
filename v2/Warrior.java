@@ -1,14 +1,18 @@
 public class Warrior extends Protagonist {
 
-    //change these constants to set default defense and attack of protagonist
-    public final static int DEFENSE_STAT = 20;
-    public final static double ATTACK_RATING = 0.6;
+    public Warrior(String name) {
+	super(name);
+	hp = 200;
+	strength += 50;
+    }    
+    
+    //override default value
+    public final static double ATTACK_RATING = 0.75;
 
-
-    public Warrior(String nametbd) {
-	super(nametbd);
-	hp = 150;
-	strength = 120;
+    //toString
+    public String toString() {
+	super.toString();
+	return "You are a Warrior.";
     }
-
 }
+
