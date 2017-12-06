@@ -5,6 +5,12 @@ public class Mage extends Protagonist {
         hp = 100;
             
     }
+	
     public final static double DEFENSE_STAT = 55; 
     public final static double ATTACK_RATING = 0.3;
+	
+	public String toString() {
+		super.toString();
+		return "You are a mage";
+	}
 }
