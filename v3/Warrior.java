@@ -11,8 +11,17 @@ public class Warrior extends Protagonist {
 
     //toString
     public String toString() {
-	super.toString();
 	return "You are a Warrior.";
+    }
+
+        public void specialize() {
+	defense -= 7;
+	attackRating += 7;
+    }
+
+    public void normalize() {
+	defense = DEFENSE_STAT;
+	attackRating = ATTACK_RATING;
     }
 }
 

@@ -8,16 +8,31 @@ public class Protagonist extends Character{
     protected String name;
     protected int hp;
     protected int strength;
-    private int defense;
-    private double attackRating;
+    protected int defense;
+    protected double attackRating;
 
     //methods
 
     //toString
-    public String toString() {
-	super.toString();
-	return "You are a Protagonist.";
-    }
+    
+    /* Error when Protagonist class is not abstract:
+     *Protagonist.java:1: error: Protagonist is not abstract and does not 
+     *override abstract method toString() in Protagonist
+     *public class Protagonist extends Character{
+     * ^
+     *1 error
+     */
+
+    /* Error when Mage subclass omits toString():
+     *Mage.java:1: error: Mage is not abstract and does not override 
+     *abstract method toString() in Protagonist
+     *public class Mage extends Protagonist {
+     *  ^
+     *1 error
+     */
+
+   
+    public abstract String toString();
 	
     /*constructor
      *   takes String input to name the Protagonist
@@ -66,18 +81,12 @@ public class Protagonist extends Character{
      *  decreases defense attribute
      *  increases attack attribute
      */
-    public void specialize() {
-    	defense -= 5;
-    	attackRating += 5;
-    }
+    public abstract void specialize();
     
     /*normalize
      *  prepares the Protagonist to perform a normal attack
      *   resets defense attribute
      *   resets attack attribute
      */
-    public void normalize() {
-	defense = DEFENSE_STAT;
-	attackRating = ATTACK_RATING;
-    }
+    public abstract void normalize();
 }

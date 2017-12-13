@@ -11,8 +11,16 @@ public class Elf extends Protagonist {
 
     //toString
     public String toString() {
-	super.toString();
 	return "You are an Elf.";
     }
-    
+
+    public void specialize() {
+	defense -= 5;
+	attackRating += 5;
+    }
+
+    public void normalize() {
+	defense = DEFENSE_STAT;
+	attackRating = ATTACK_RATING;
+    }
 }
