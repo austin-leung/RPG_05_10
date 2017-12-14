@@ -4,6 +4,18 @@ public class Protagonist extends Character{
     public final static int DEFENSE_STAT = 40; 
     public final static double ATTACK_RATING = 0.4;
    
+   /* attempt at #3, instantiating a Protagonist
+	*public static void main(String[] args) {
+	*   Protagonist test = new Protagonist();
+	*}
+	* resulting errors:
+    *Protagonist.java:1: error: Protagonist is not abstract and does not override abstract method normalize() in Protagonist
+	*public class Protagonist extends Character{
+	*		^
+	*Protagonist.java:8: error: constructor Protagonist in class Protagonist cannot be applied to given types;
+    *      Protagonist test = new Protagonist();
+	*/
+	
     //fields
     protected String name;
     protected int hp;
